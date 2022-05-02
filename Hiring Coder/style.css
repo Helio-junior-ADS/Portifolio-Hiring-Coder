@@ -1,0 +1,185 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+  list-style: none;
+  font-family: 'Boogaloo', cursive;
+}
+
+body {
+  background-color: #080317;
+
+}
+
+header {
+  background-color: #6ADC5B;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 50px;
+}
+
+.logo img {
+   max-width: 100px;
+  max-width: 100px;
+  box-shadow: 1px 1px 10px 1px black;
+  border-radius: 100%;
+  margin: 5px 0;
+  transition: 400ms;
+}
+.logo img:hover {
+  max-width: 110px;
+  max-width: 110px;
+  box-shadow: 1px 1px 10px 1px black;
+  border-radius: 100%;
+  margin: 5px 0;
+}
+
+
+.conteiner__nav {
+  width: 60%;
+  
+
+}
+
+ul {
+
+  margin: 5px;
+  text-align: end;
+
+}
+
+li {
+  display: inline-block;
+  margin: 8px;
+
+}
+
+a {
+  color: white;
+  transition: 400ms;
+  
+}
+.img__nav{
+  width: 25px;
+  transition: 400ms;
+}
+
+.img__nav:hover{
+  width: 30px
+}
+
+.conteiner__prin {
+  margin-top: 65px;
+  color: #6ADC5B;
+  text-align: center;
+}
+
+.nome h1 {
+  font-size: 60px;
+}
+
+.nome h5 {
+  font-size: 25px;
+ 
+}
+
+#arrow {
+  cursor: pointer;
+  margin-top: 20px;
+  font-size: 35px;
+  animation: blink 1s steps(5, start) infinite;
+}
+@keyframes blink {
+  to{
+    visibility: hidden;
+  }
+}
+
+.rotate{
+  transform: rotate(180deg);
+  transition: 300ms;
+}
+
+.active{
+  display: block !important;
+}
+
+#animation{
+  transition: 300ms;
+}
+
+
+p {
+  color: white;
+  font-size: 20px;
+
+}
+
+.Sobre p {
+  
+  margin: 0 auto;
+  width: 90%;
+}
+
+.form {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.form div p {
+  margin: 20px 0px 10px 0px;
+  font-size: 18px;
+}
+
+.form form button {
+  cursor: pointer;
+  margin-top: 10px;
+  margin-left: -5px;
+  padding: 10px 30px;
+  font-size: 20px;
+  background-color: #6ADC5B;
+  color: white;
+  border-radius: 0px 8px 8px 0px;
+  border: none;
+  transition: 400ms;
+
+}
+
+.form form button:hover {
+  background-color: black;
+  color: #6ADC5B;
+  }
+
+.input {
+  font-size: 20px;
+  min-width: 20%;
+  border-radius: 8px 0px 0px 8px;
+  padding: 10px;
+  border: none;
+  
+}
+
+.fomulario{
+  margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 480px){
+  .conteiner__prin .Sobre p{
+    font-size: 16px;
+  }
+  .nome h1 {
+    font-size: 50px;
+  }
+  .nome h5 {
+    font-size: 20px;
+  }
+  .Sobre p {
+      margin: 0 auto;
+    width: 90%;
+    text-align: justify;
+
+  }
+} 

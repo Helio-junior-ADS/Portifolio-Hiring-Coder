@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Hélio Júnior</title>
+    <script
+      src="https://kit.fontawesome.com/7e58060423.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Boogaloo&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+   
+    <header>
+      <div class="logo">
+        <img src="/img/logo h2.png" alt="" />
+      </div>
+      <nav class="conteiner__nav">
+        <ul>
+          <li>
+            <a
+              href="https://github.com/Helio-junior-ADS?tab=repositories"
+              target="_black"
+              ><img class="img__nav" src="/img/github-icon (1).svg" alt=""></a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/h%C3%A9lio-j%C3%BAnior-81aa6612a/"
+              target="_black"
+              ><img class="img__nav" src="/img/linkedin-icon.svg" alt=""></a
+            >
+          </li>
+          <li>
+            <a href="http://wa.me/85988001800" target="_black"><img class="img__nav" src="/img/whatsapp.svg" alt=""></a>
+          </li>
+          <li><a href="mailto:helio.junior.ads@gmail.com"><img class="img__nav" src="/img/google-gmail.svg" alt=""></a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="conteiner__prin">
+        <div class="nome">
+          <h1>Hélio Júnior</h1>
+          <h5>Front-End Developer</h5>
+        </div>
+        <div onclick="displayAbout()"  id="arrow">
+          <i id="animation" class="fa-solid fa-sort-down"></i>
+        </div>
+        <div style="display: none;" class="Sobre" id="about">
+          <p >
+            No momento estou a procura de oportunidades na área de Web Programação, venho estudando muito para realizar esse sonho, desenvolvendo projetos junto aos portais educacionais no qual estou cadastrado. Minhas habilidades com HTML, CSS, JavaScript, vem sendo refinadas a cada dia, mas claro ainda tenho muitas ambições de conhecimento na área, como por exemplo: PHP, Banco de Dados, Bootstrap, Python React Native, JS, Node JS, Angular e entre outras.
+            Dentro de mim há muita vontade de elevar minhas capacidades, e alcançar um nível Sênior como desenvolvedor, afim de me consolidar como autoridade no assunto, e poder compartilhar com outros interessados todas as facetas dessa área de atuação, que a cada dia, pelo menos a os meus olhos fica muito mais encantadora e incrível. 
+            
+            "Corte sua própria lenha. Assim, ela aquecerá você duas vezes."
+            -Henry Ford
+          </p>
+        </div>
+
+        <div class="form">
+          <div>
+            <p>Deixe seu contato !!!</p>
+          </div>
+          <form class="fomulario" method="post">
+            <input class="input" type="text" id="email" placeholder="Seu E-mail Aqui" />
+            <button>Enviar</button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <script>
+      function displayAbout() {
+        var arrow = document.getElementById('animation');
+        arrow.classList.toggle('rotate');
+        var display = document.getElementById('about');
+        display.classList.toggle('active')
+      }
+    </script>
+  </body>
+</html>
